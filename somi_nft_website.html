@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somi | NafasArt NFT Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(120deg, #f0f4f8, #fff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #333;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .gallery {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+    }
+    .info {
+      background: #f8f9fa;
+      padding: 2rem;
+    }
+    .info h2, .roadmap h2, .contact h2 {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .roadmap, .contact {
+      padding: 2rem;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      background: #222;
+      padding: 1rem;
+      color: #fff;
+    }
+    .sidebar h3 {
+      margin-bottom: 1rem;
+    }
+    .sidebar a {
+      display: block;
+      color: #ddd;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+    }
+    .newsletter input[type="email"] {
+      padding: 0.5rem;
+      width: 60%;
+      margin-right: 0.5rem;
+      border: 1px solid #ccc;
+    }
+    .newsletter button {
+      padding: 0.5rem 1rem;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    audio {
+      display: block;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Collections</h3>
+    <a href="#">Human Collection</a>
+    <a href="#">Dreamscape</a>
+    <a href="#">Nature & Emotion</a>
+  </div>
+
+  <header>
+    <div class="logo">Somi | NafasArt</div>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+      <a href="https://discord.gg/sominafasart" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Unique Human-Centric NFTs</h1>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1543877087-ebf71efbde20" alt="NFT Sample" />
+      <div class="card-content">
+        <h3>Human #01</h3>
+        <p>Each NFT is unique and crafted with emotion and story. Price negotiable. DM on Telegram @SomiArtTeam</p>
+      </div>
+    </div>
+    <!-- Add more cards -->
+  </section>
+
+  <section class="roadmap" id="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li>✅ Launch of Somi | NafasArt Gallery Website</li>
+      <li>🔜 Collaboration with TON & ETH influencers</li>
+      <li>🔜 Weekly NFT drop (human-focused themes)</li>
+      <li>🔜 Launch of interactive minting game (Play-to-Mint)</li>
+    </ul>
+  </section>
+
+  <section class="info">
+    <h2>About the Project</h2>
+    <p>This project celebrates inner peace, human beauty, and soulful storytelling through pixel-perfect, one-of-a-kind art. Each NFT is a piece of heart, not just a piece of code.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Stay Connected</h2>
+    <form class="newsletter">
+      <input type="email" placeholder="Enter your email for updates" />
+      <button type="submit">Subscribe</button>
+    </form>
+    <audio controls autoplay loop>
+      <source src="https://cdn.pixabay.com/audio/2022/03/30/audio_d42ee9bffb.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Somi | NafasArt. All rights reserved.</p>
+  </footer>
+</body>
+</html>
